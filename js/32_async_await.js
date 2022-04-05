@@ -27,6 +27,9 @@ async function app() {
     //    console.log(clientes);
     //    console.log(pedidos);
 
+       /*** Como optimizar un ASYNC/AWAIT ->  con promise.all mejoramos la performance porque van a ejecutarse
+        ** las dos funciones al mismo tiempo, y será mas rápida
+        ** */
     const resultado = await Promise.all([ descargarNuevosClientes(), descargarUltimosPedidos() ]);
     console.log(resultado[0]);
     console.log(resultado[1]);
@@ -34,7 +37,7 @@ async function app() {
        console.log(error);
    }
 
-  
+
 }
 
 app();

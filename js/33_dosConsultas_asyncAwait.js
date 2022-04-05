@@ -6,7 +6,7 @@ async function obtenerEmpleados() {
     //     .then( resultado => resultado.json())
     //     .then( datos => {
     //         // console.log(datos.empleados);
-
+    //
     //         const { empleados } = datos;
     //        console.log(empleados);
     //     });
